@@ -38,6 +38,18 @@ $ . env/bin/activate
 $ python setup.py test
 ```
 
+### Ferramentas
+- Back-End
+	- Python 2.7
+	- Flask
+- Fron-End
+	- HTML 5
+	- CSS
+	- Sass
+	- React JS
+- Banco de dados
+	- SQL
+
 ### Autoria
 - @Dayof
 	- Dayanne Fernandes da Cunha
