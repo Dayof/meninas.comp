@@ -1,1 +1,1 @@
-from ccminas import app
+from meninascomp import app

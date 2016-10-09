@@ -33,9 +33,8 @@ $ deactivate
 
 ### Testes
 ```
-$ cd meninas.comp
-$ . env/bin/activate
-$ python setup.py test
+$ cd meninas.comp/test
+$ python tests.py
 ```
 
 ### Ferramentas

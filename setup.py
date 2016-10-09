@@ -11,6 +11,6 @@ setup(
         'pytest-runner',
     ],
     tests_require=[
-        'pytest',
+        'unitest',
     ],
 )
