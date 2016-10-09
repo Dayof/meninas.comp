@@ -17,8 +17,19 @@ $ flask initdb
 ```
 $ flask run
 ```
-
 A aplicação estará ativa no endereço http://localhost:5000/ .
+
+### Environment
+
+Iniciar
+```
+$ . env/bin/activate
+```
+
+Sair
+```
+$ deactivate
+```
 
 ### Testes
 ```
