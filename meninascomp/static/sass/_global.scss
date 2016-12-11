@@ -1,0 +1,67 @@
+@include keyframes(slide-down) {
+  0% { opacity: 1; }
+  90% { opacity: 0; }
+}
+
+.element {
+  @include animation('slide-down 5s 3');
+  background: black;
+}
+
+body {
+  background: $background-color;
+  color: $primary-color;
+  font: 100% $font-stack;
+ }
+
+p {
+  @include font-size(14px)
+}
+
+a {
+  color: $link-color
+}
+
+h1 {
+  color: $link-color;
+  title {
+    color: $primary-color;
+    font: $font-stack;
+  }
+}
+
+h2 {
+  color: $link-color;
+}
+
+// .sidebar {
+//   @include bp-small {
+//     margin: $no-margin;
+//     width: 100%;
+//     float: none;
+//   }
+//   margin: $litte-margin;
+//   width: 60%;
+//   float: left;
+// }
+
+// div {
+//   container {
+//     background-color: $background-color;
+//     color: $primary-color;
+//     width: 100%;
+//   }
+// }
+
+// .page           { margin: 2em auto; width: 35em; border: 5px solid #ccc;
+// padding: 0.8em; background: white; }
+// .entries        { list-style: none; margin: 0; padding: 0; }
+// .entries li     { margin: 0.8em 1.2em; }
+// .entries li h2  { margin-left: -1em; }
+// .add-entry      { font-size: 0.9em; border-bottom: 1px solid #ccc; }
+// .add-entry dl   { font-weight: bold; }
+// .metanav        { text-align: right; font-size: 0.8em; padding: 0.3em;
+//                   margin-bottom: 1em; background: #fafafa; }
+// .flash          { background: #CEE5F5; padding: 0.5em;
+//                   border: 1px solid #AACBE2; }
+// .error { background: #F0D6D6; padding: 0.5em; }

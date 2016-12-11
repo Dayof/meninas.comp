@@ -1,0 +1,82 @@
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes slide-down {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes slide-down {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@-o-keyframes slide-down {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@keyframes slide-down {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+/* line 6, ../sass/_global.scss */
+.element {
+  -webkit-animation: slide-down 5s 3;
+  -moz-animation: slide-down 5s 3;
+  -ms-animation: slide-down 5s 3;
+  -o-animation: slide-down 5s 3;
+  animation: slide-down 5s 3;
+  background: black;
+}
+
+/* line 11, ../sass/_global.scss */
+body {
+  background: #eeeeee;
+  color: #333333;
+  font: 100% Helvetica, sans-serif;
+}
+
+/* line 17, ../sass/_global.scss */
+p {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+/* line 21, ../sass/_global.scss */
+a {
+  color: #377ba8;
+}
+
+/* line 25, ../sass/_global.scss */
+h1 {
+  color: #377ba8;
+}
+/* line 27, ../sass/_global.scss */
+h1 title {
+  color: #333333;
+  font: Helvetica, sans-serif;
+}
+
+/* line 33, ../sass/_global.scss */
+h2 {
+  color: #377ba8;
+}
