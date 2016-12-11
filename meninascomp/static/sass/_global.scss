@@ -18,6 +18,10 @@ body {
   line-height: 1.5;
  }
 
+ul {
+  list-style-type: none;
+}
+
 .top-bar, .top-bar ul {
   width: auto;
   background-color: rgba(255, 255, 255, 0);
@@ -111,6 +115,48 @@ h2 {
 
 .hidden {
   @extend %visuallyhidden;
+}
+
+.footer {
+  background-color: $base-blue;
+  position: relative;
+  background-size: 1.25rem;
+  background-position: bottom center;
+}
+
+.social-icons {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: auto;
+
+  li a {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    border: .0625rem solid rgba(255,255,255, .5);
+    border-radius: 50%;
+    line-height: 5.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    @include transition(all .15s ease);
+    &:hover {
+      color: transparent;
+      background-color: white;
+    }
+    &:hover .icon{
+      color: $base-blue;
+    }
+  }
+}
+
+.icon {
+  @include transition(all .15s ease);
+  &:hover {
+
+  }
 }
 
 // .sidebar {

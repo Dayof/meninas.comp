@@ -76,17 +76,22 @@ body {
 }
 
 /* line 21, ../sass/_global.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 25, ../sass/_global.scss */
 .top-bar, .top-bar ul {
   width: auto;
   background-color: rgba(255, 255, 255, 0);
   padding: .5rem;
 }
 
-/* line 27, ../sass/_global.scss */
+/* line 31, ../sass/_global.scss */
 .top-bar-right {
   width: auto;
 }
-/* line 29, ../sass/_global.scss */
+/* line 33, ../sass/_global.scss */
 .top-bar-right a {
   text-transform: uppercase;
   font-weight: 700;
@@ -95,7 +100,7 @@ body {
   color: white;
 }
 
-/* line 38, ../sass/_global.scss */
+/* line 42, ../sass/_global.scss */
 .header-top {
   position: absolute;
   z-index: 10;
@@ -103,7 +108,7 @@ body {
   top: 0;
 }
 
-/* line 45, ../sass/_global.scss */
+/* line 49, ../sass/_global.scss */
 .header-bottom {
   color: #3ea5b3;
   background-image: url("../img/header-background.png");
@@ -113,20 +118,20 @@ body {
   max-height: calc(100vh - 72px);
 }
 
-/* line 54, ../sass/_global.scss */
+/* line 58, ../sass/_global.scss */
 .row {
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 60, ../sass/_global.scss */
+/* line 64, ../sass/_global.scss */
 .hero-inner {
   position: relative;
   height: 100%;
 }
 
-/* line 65, ../sass/_global.scss */
+/* line 69, ../sass/_global.scss */
 .hero-copy {
   display: inline-block;
   position: absolute;
@@ -146,14 +151,14 @@ body {
   font-family: Rockwell;
 }
 
-/* line 92, ../sass/_global.scss */
+/* line 96, ../sass/_global.scss */
 a {
   background-color: rgba(255, 255, 255, 0);
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 98, ../sass/_global.scss */
+/* line 102, ../sass/_global.scss */
 h1.title {
   color: #028eeb;
   -webkit-transition: color 0.15s ease;
@@ -163,12 +168,64 @@ h1.title {
   transition: color 0.15s ease;
   font: Helvetica, sans-serif;
 }
-/* line 101, ../sass/_global.scss */
+/* line 105, ../sass/_global.scss */
 h1.title:hover {
   color: white;
 }
 
-/* line 108, ../sass/_global.scss */
+/* line 112, ../sass/_global.scss */
 h2 {
   color: #028eeb;
+}
+
+/* line 120, ../sass/_global.scss */
+.footer {
+  background-color: #2896ea;
+  position: relative;
+  background-size: 1.25rem;
+  background-position: bottom center;
+}
+
+/* line 127, ../sass/_global.scss */
+.social-icons {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: auto;
+}
+/* line 134, ../sass/_global.scss */
+.social-icons li a {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  line-height: 5.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+/* line 145, ../sass/_global.scss */
+.social-icons li a:hover {
+  color: transparent;
+  background-color: white;
+}
+/* line 149, ../sass/_global.scss */
+.social-icons li a:hover .icon {
+  color: #2896ea;
+}
+
+/* line 155, ../sass/_global.scss */
+.icon {
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
