@@ -122,6 +122,26 @@ h2 {
   position: relative;
   background-size: 1.25rem;
   background-position: bottom center;
+  text-align: center;
+  font-family: Rockwell;
+  color: $base-white;
+  text-align: center;
+}
+
+.footer-actions {
+  float: right;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-unb {
+  float: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  padding-bottom: 1rem;
 }
 
 .social-icons {

@@ -184,9 +184,32 @@ h2 {
   position: relative;
   background-size: 1.25rem;
   background-position: bottom center;
+  text-align: center;
+  font-family: Rockwell;
+  color: white;
+  text-align: center;
 }
 
-/* line 127, ../sass/_global.scss */
+/* line 131, ../sass/_global.scss */
+.footer-actions {
+  float: right;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 137, ../sass/_global.scss */
+.footer-unb {
+  float: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 143, ../sass/_global.scss */
+.copyright {
+  padding-bottom: 1rem;
+}
+
+/* line 147, ../sass/_global.scss */
 .social-icons {
   display: block;
   margin-top: 0;
@@ -194,7 +217,7 @@ h2 {
   margin-left: auto;
   margin-top: auto;
 }
-/* line 134, ../sass/_global.scss */
+/* line 154, ../sass/_global.scss */
 .social-icons li a {
   display: inline-block;
   width: 5rem;
@@ -211,17 +234,17 @@ h2 {
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 145, ../sass/_global.scss */
+/* line 165, ../sass/_global.scss */
 .social-icons li a:hover {
   color: transparent;
   background-color: white;
 }
-/* line 149, ../sass/_global.scss */
+/* line 169, ../sass/_global.scss */
 .social-icons li a:hover .icon {
   color: #2896ea;
 }
 
-/* line 155, ../sass/_global.scss */
+/* line 175, ../sass/_global.scss */
 .icon {
   -webkit-transition: all 0.15s ease;
   -moz-transition: all 0.15s ease;
