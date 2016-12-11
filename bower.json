@@ -1,0 +1,22 @@
+{
+  "name": "meninascomp",
+  "homepage": "https://github.com/Dayof/meninas.comp",
+  "description": "",
+  "main": "meninascomp.py",
+  "authors": [
+    "Dayanne Fernandes da Cunha"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "meninascomp/static/components",
+    "test",
+    "tests"
+  ],
+  "sasslintConfig": ".",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap-css-only": "^3.3.7"
+  }
+}
