@@ -5,17 +5,52 @@
     <title>{{ index_data.titulo }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='public/main.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/foundation-sites/dist/foundation.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='components/animate.css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/bootstrap-css-only/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='public/main.min.css') }}">
   </head>
   <body>
-    <div class="container">
-      <h1>{{ index_data.titulo }}</h1>
-      <br>
-    <div class="content"></div>
-    {% block body %}{% endblock %}
+    <div class="page">
+      <header>
+        <div class="header-top">
+          <nav class="top-bar row">
+            <div class="top-bar-left">
+              <ul class="menu top-bar-menu fouc" style="opacity: 1;">
+                <li class="menu site-branding">
+                  <a href="https://meninascomp.com" class="top-bar-logo">
+                    <img src="static/img/logo.png" alt="Meninas.comp">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-bar-right top-bar-right-mobile"></div>
+            <div class="top-bar-right top-bar-right-desktop mobile-menu">
+              <ul class="menu">
+                <li><a href=".">Projeto</a></li>
+                <li><a href=".">Equipe</a></li>
+                <li><a href=".">Eventos</a></li>
+                <li><a href=".">Galeria</a></li>
+                <li><a href=".">Contato</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="header-bottom">
+          <div class="hero-inner row">
+            <div class="hero-copy">
+              <h1 class="mc-header">
+                > MENINAS.COMP <b class="animated infinite flash">_</b> 
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <container>
+        <div class="content">
+          {% block body %}{% endblock %}
+        </div>
+      </container>
     </div>
-    <!-- scripts -->
   </body>
 </html>

@@ -1,3 +1,29 @@
+/* line 63, ../sass/_mixins.scss */
+.container-with-floated-children {
+  zoom: 1;
+}
+/* line 65, ../sass/_mixins.scss */
+.container-with-floated-children:before, .container-with-floated-children:after {
+  display: table;
+  content: " ";
+}
+/* line 69, ../sass/_mixins.scss */
+.container-with-floated-children:after {
+  clear: both;
+}
+
+/* line 74, ../sass/_mixins.scss */
+.hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
 @-webkit-keyframes slide-down {
   0% {
     opacity: 1;
@@ -38,45 +64,111 @@
     opacity: 0;
   }
 }
-/* line 6, ../sass/_global.scss */
-.element {
-  -webkit-animation: slide-down 5s 3;
-  -moz-animation: slide-down 5s 3;
-  -ms-animation: slide-down 5s 3;
-  -o-animation: slide-down 5s 3;
-  animation: slide-down 5s 3;
-  background: black;
-}
-
 /* line 11, ../sass/_global.scss */
 body {
-  background: #eeeeee;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  background: white;
   color: #333333;
-  font: 100% Helvetica, sans-serif;
-}
-
-/* line 17, ../sass/_global.scss */
-p {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 /* line 21, ../sass/_global.scss */
-a {
-  color: #377ba8;
+.top-bar, .top-bar ul {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0);
+  padding: .5rem;
 }
 
-/* line 25, ../sass/_global.scss */
-h1 {
-  color: #377ba8;
-}
 /* line 27, ../sass/_global.scss */
-h1 title {
-  color: #333333;
+.top-bar-right {
+  width: auto;
+}
+/* line 29, ../sass/_global.scss */
+.top-bar-right a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: .08125rem;
+  color: white;
+}
+
+/* line 38, ../sass/_global.scss */
+.header-top {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
+/* line 45, ../sass/_global.scss */
+.header-bottom {
+  color: #3ea5b3;
+  background-image: url("../img/header-background.png");
+  background-size: cover;
+  height: 40rem;
+  min-height: 25rem;
+  max-height: calc(100vh - 72px);
+}
+
+/* line 54, ../sass/_global.scss */
+.row {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 60, ../sass/_global.scss */
+.hero-inner {
+  position: relative;
+  height: 100%;
+}
+
+/* line 65, ../sass/_global.scss */
+.hero-copy {
+  display: inline-block;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1rem;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 600px;
+  transition: max-height .3s;
+  font-family: Rockwell;
+}
+
+/* line 92, ../sass/_global.scss */
+a {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 98, ../sass/_global.scss */
+h1.title {
+  color: #028eeb;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  -ms-transition: color 0.15s ease;
+  -o-transition: color 0.15s ease;
+  transition: color 0.15s ease;
   font: Helvetica, sans-serif;
 }
+/* line 101, ../sass/_global.scss */
+h1.title:hover {
+  color: white;
+}
 
-/* line 33, ../sass/_global.scss */
+/* line 108, ../sass/_global.scss */
 h2 {
-  color: #377ba8;
+  color: #028eeb;
 }

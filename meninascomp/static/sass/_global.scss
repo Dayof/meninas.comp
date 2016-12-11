@@ -4,34 +4,113 @@
 }
 
 .element {
-  @include animation('slide-down 5s 3');
-  background: black;
+  // background: rgba(255, 255, 255, 0);
+  // @include animation('slide-down 5s 3');
 }
 
 body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
   background: $background-color;
   color: $primary-color;
-  font: 100% $font-stack;
+  font-family: $font-stack;
+  line-height: 1.5;
  }
 
-p {
-  @include font-size(14px)
+.top-bar, .top-bar ul {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0);
+  padding: .5rem;
 }
+
+.top-bar-right {
+  width: auto;
+  a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: .08125rem;
+    color: $base-white;
+  }
+}
+
+.header-top {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
+.header-bottom {
+  color: rgb(62, 165, 179);
+  background-image: url('../img/header-background.png');
+  background-size: cover;
+  height: 40rem;
+  min-height: 25rem;
+  max-height: calc(100vh - 72px);
+}
+
+.row {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-inner {
+  position: relative;
+  height: 100%;
+}
+
+.hero-copy {
+  display: inline-block;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1rem;
+  color: $base-white;
+  text-align: center;
+  padding: 1rem 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 600px;
+  transition: max-height .3s;
+  font-family: Rockwell;
+}
+
+.container-with-floated-children {
+  @extend %clearfix;
+}
+
+// p {
+//   @include font-size(14px)
+// }
 
 a {
-  color: $link-color
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-h1 {
+h1.title {
   color: $link-color;
-  title {
-    color: $primary-color;
-    font: $font-stack;
+  @include transition(color .15s ease);
+  &:hover {
+    color: white;
   }
+  // color: $primary-color;
+  font: $font-stack;
 }
 
 h2 {
   color: $link-color;
+}
+
+.hidden {
+  @extend %visuallyhidden;
 }
 
 // .sidebar {

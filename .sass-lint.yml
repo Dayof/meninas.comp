@@ -18,13 +18,6 @@ rules:
   extends-before-mixins: 2
   extends-before-declarations: 2
   placeholder-in-extend: 2
-  mixins-before-declarations:
-    - 2
-    -
-      exclude:
-        - breakpoint
-        - mq
-
   no-warn: 1
   no-debug: 1
   no-ids: 2
@@ -44,9 +37,3 @@ rules:
         - display
         - margin
       ignore-custom-properties: true
-  variable-for-property:
-    - 2
-    -
-      properties:
-        - margin
-        - content

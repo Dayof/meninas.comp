@@ -19,11 +19,11 @@ module.exports = function(grunt) {
         target: ['./meninascomp/static/sass/**/*.scss']
     },
     watch: {
-      files: './<%= pkg.name %>/static/sass/**/*.scss', // 1
+      files: './<%= pkg.name %>/static/sass/**/*.scss',
       tasks: [ 'sass', 'cssmin' ]
     },
-    sass: require( './custom_modules/sass' ).task, // 2
-    cssmin: require( './custom_modules/cssmin' ).task // 3
+    sass: require( './custom_modules/sass' ).task,
+    cssmin: require( './custom_modules/cssmin' ).task
   });
 
   // Load the plugin that provides the "uglify" task.
