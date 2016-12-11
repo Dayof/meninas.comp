@@ -22,6 +22,11 @@ ul {
   list-style-type: none;
 }
 
+.page {
+  width: 100%;
+  overflow: hidden;
+}
+
 .top-bar, .top-bar ul {
   width: auto;
   background-color: rgba(255, 255, 255, 0);
@@ -117,15 +122,39 @@ h2 {
   @extend %visuallyhidden;
 }
 
+.content {
+  display: block;
+  margin: 0;
+  background-color: $background-color;
+  max-width: 100%;
+  padding: 0;
+}
+
+.mid-content {
+  display: block;
+  margin-right: 0%;
+  width: 100%;
+  color: $base-header-color;
+  padding: 2rem 0 0 2rem;
+
+  h1 {
+    @include padding-bottom-size(30px);
+    text-transform: uppercase;
+  }
+
+  .we-are-desc {
+    @include margin-bottom-size(15px);
+    @include font-size(35px);
+  }
+}
+
 .footer {
-  background-color: $base-blue;
-  position: relative;
   background-size: 1.25rem;
   background-position: bottom center;
   text-align: center;
   font-family: Rockwell;
   color: $base-white;
-  text-align: center;
+  background-color: $base-blue;
 }
 
 .footer-actions {
@@ -179,6 +208,7 @@ h2 {
   }
 }
 
+
 // .sidebar {
 //   @include bp-small {
 //     margin: $no-margin;
@@ -198,8 +228,6 @@ h2 {
 //   }
 // }
 
-// .page           { margin: 2em auto; width: 35em; border: 5px solid #ccc;
-// padding: 0.8em; background: white; }
 // .entries        { list-style: none; margin: 0; padding: 0; }
 // .entries li     { margin: 0.8em 1.2em; }
 // .entries li h2  { margin-left: -1em; }

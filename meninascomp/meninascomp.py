@@ -26,13 +26,32 @@ app.config.from_envvar('MENINASCOMP_SETTINGS', silent=True)
 DESC = {'titulo': 'Meninas.comp',
        'foto': 'logo.png'}
 
-
 @app.route('/')
 def index():
     # db = get_db()
     # cur = db.execute('select title, text from entries order by id desc')
     # entries = cur.fetchall()
-    return render_template('welcome.html', index_data=DESC)
+    return render_template('weare.html', index_data=DESC)
+
+@app.route('/weare')
+def weAre():
+    return render_template('weare.html', index_data=DESC)
+
+@app.route('/team')
+def team():
+    return render_template('team.html', index_data=DESC)
+
+@app.route('/gallery')
+def gallery():
+    return render_template('gallery.html', index_data=DESC)
+
+@app.route('/events')
+def events():
+    return render_template('events.html', index_data=DESC)
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', index_data=DESC)
 
 if __name__ == '__main__':
     app.run(debug=True)
