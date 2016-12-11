@@ -2,3 +2,6 @@
 *.egg*
 *.pyc
 .cache
+.sass-cache
+npm-debug.log
+node_modules
