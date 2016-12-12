@@ -6,7 +6,11 @@
     "url": "git+https://github.com/Dayof/meninas.comp.git"
   },
   "license": "MIT",
+  "scripts": {
+   "babel": "babel --presets es2015,react --watch meninascomp/static/js/ --out-dir meninascomp/static/public/"
+  },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.20.0",
     "babel-loader": "^6.2.9",
     "babel-plugin-transform-react-jsx": ">= 6.3",

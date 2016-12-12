@@ -23,42 +23,5 @@
       <h1 class="we-are-header">Problema</h1>
           <p class="we-are-desc">Projeto idealizado por professoras do Departamento de Ciência da Computação da Universidade de Brasília que fomenta inclusão de meninas de escolas públicas do Distrito Federal através de projetos que estimulam esse público a ingressar em cursos que possuem um público majoritariamente masculino.</p>
     </div>
-    <div id="root">
-      <!-- This element's contents will be replaced with your component. -->
-  </div>
-    <script type="text/jsx">
-
-    /*** @jsx React.DOM */
-
-    class TopBar extends React.Component {
-        constructor(props){
-          super(props);
-          this.state={isHide:false};
-          this.hideBar = this.hideBar.bind(this)
-        }
-        hideBar(){
-           let {isHide} = this.state
-           window.scrollY > 300?
-           !isHide && this.setState({isHide:true})
-           :
-           isHide && this.setState({isHide:false})
-        }
-        componentDidMount(){
-            window.addEventListener('scroll',this.hideBar);
-        }
-        componentWillUnmount(){
-             window.removeEventListener('scroll',this.hideBar);
-        }
-        render(){
-
-            let classHide=this.state.isHide?"hide":""
-            return <div className={"topbar "+classHide}>topbar</div>;
-        }
-    }
-
-    ReactDOM.render(<TopBar/>,document.getElementById('root'));
-
-  </script>
-
   </div>
 {% endblock %}

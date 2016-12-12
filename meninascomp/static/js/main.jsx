@@ -1,53 +1,27 @@
-var DynamicSearch = React.createClass({
-
-  // sets initial state
-  getInitialState: function(){
-    return { searchString: '' };
-  },
-
-  // sets state, triggers render method
-  handleChange: function(event){
-    // grab value form input box
-    this.setState({searchString:event.target.value});
-    console.log("scope updated!");
-  },
-
-  render: function() {
-
-    var countries = this.props.items;
-    var searchString = this.state.searchString.trim().toLowerCase();
-
-    // filter countries list by value from input box
-    if(searchString.length > 0){
-      countries = countries.filter(function(country){
-        return country.name.toLowerCase().match( searchString );
-      });
+class TopBar extends React.Component {
+    constructor(props){
+      super(props);
+      this.state={isHide:false};
+      this.hideBar = this.hideBar.bind(this)
     }
+    hideBar(){
+       let {isHide} = this.state
+       window.scrollY > 300?
+       !isHide && this.setState({isHide:true})
+       :
+       isHide && this.setState({isHide:false})
+    }
+    componentDidMount(){
+        window.addEventListener('scroll',this.hideBar);
+    }
+    componentWillUnmount(){
+         window.removeEventListener('scroll',this.hideBar);
+    }
+    render(){
 
-    return (
-      <div>
-        <input type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="Search!" />
-        <ul>
-          { countries.map(function(country){ return <li>{country.name} </li> }) }
-        </ul>
-      </div>
-    )
-  }
+        let classHide=this.state.isHide?"top-bar-background":"hide"
+        return <div className={classHide}></div>;
+    }
+}
 
-});
-
-// list of countries, defined with JavaScript object literals
-var countries = [
-  {"name": "Sweden"}, {"name": "China"}, {"name": "Peru"}, {"name": "Czech Republic"},
-  {"name": "Bolivia"}, {"name": "Latvia"}, {"name": "Samoa"}, {"name": "Armenia"},
-  {"name": "Greenland"}, {"name": "Cuba"}, {"name": "Western Sahara"}, {"name": "Ethiopia"},
-  {"name": "Malaysia"}, {"name": "Argentina"}, {"name": "Uganda"}, {"name": "Chile"},
-  {"name": "Aruba"}, {"name": "Japan"}, {"name": "Trinidad and Tobago"}, {"name": "Italy"},
-  {"name": "Cambodia"}, {"name": "Iceland"}, {"name": "Dominican Republic"}, {"name": "Turkey"},
-  {"name": "Spain"}, {"name": "Poland"}, {"name": "Haiti"}
-];
-
-ReactDOM.render(
-  <DynamicSearch items={ countries } />,
-  document.getElementById('content')
-);
+ReactDOM.render(<TopBar/>,document.getElementById('navbar-event'));
