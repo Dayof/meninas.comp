@@ -30,9 +30,8 @@ ul {
 .top-bar-background{
   position: fixed;
   @include height-size(100px);
-  // background-color: $base-strong-blue;
   background-image: url('../img/header-background.png');
-  background-position-y: 100px;
+  background-position-y: 180px;
   background-size: cover;
   left:0;
   top:0;
@@ -41,10 +40,9 @@ ul {
   font-size:22px;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
   @include transition(top .15s ease);
-  opacity: 10;
 }
 
-.hide{
+.hide-top-bar{
   top:-40px
 }
 

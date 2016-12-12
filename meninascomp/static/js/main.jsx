@@ -6,7 +6,7 @@ class TopBar extends React.Component {
     }
     hideBar(){
        let {isHide} = this.state
-       window.scrollY > 300?
+       window.scrollY > 350?
        !isHide && this.setState({isHide:true})
        :
        isHide && this.setState({isHide:false})
@@ -19,7 +19,7 @@ class TopBar extends React.Component {
     }
     render(){
 
-        let classHide=this.state.isHide?"top-bar-background":"hide"
+        let classHide=this.state.isHide?"top-bar-background":"hide-top-bar"
         return <div className={classHide}></div>;
     }
 }

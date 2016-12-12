@@ -3,13 +3,10 @@ Webapp do meninas.comp
 
 Web application do meninas.comp.
 
-### Instalação
+### Instalação do pacote
 ```
 $ cd meninas.comp
-$ . env/bin/activate
-$ export MENINASCOMP_SETTINGS=config.py
-$ pip install --editable .
-$ export FLASK_APP=meninascomp
+$ bash run.sh
 $ flask initdb
 ```
 
@@ -19,7 +16,12 @@ $ flask run
 ```
 A aplicação estará ativa no endereço http://localhost:5000/ .
 
-### Environment
+### Iniciar Banco de Dados
+```
+$ flask initdb
+```
+
+### Ambiente
 
 Iniciar
 ```
@@ -30,6 +32,23 @@ Sair
 ```
 $ deactivate
 ```
+
+### Gerar Arquivos Públicos Estáticos
+
+CSS
+```
+$ grunt
+```
+
+JS
+```
+$ npm run babel
+```
+
+### Site
+
+Hospedado temporariamente no host https://www.pythonanywhere.com:
+ 	- http://dayoff.pythonanywhere.com/
 
 ### Testes
 ```
@@ -48,6 +67,10 @@ $ python tests.py
 	- React JS
 - Banco de dados
 	- SQL
+- Ferramentas para automatizar tarefas
+	- Bower
+	- Grunt
+	- Npm
 
 ### Autoria
 - @Dayof

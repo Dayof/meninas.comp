@@ -26,7 +26,7 @@ var TopBar = function (_React$Component) {
         value: function hideBar() {
             var isHide = this.state.isHide;
 
-            window.scrollY > 300 ? !isHide && this.setState({ isHide: true }) : isHide && this.setState({ isHide: false });
+            window.scrollY > 350 ? !isHide && this.setState({ isHide: true }) : isHide && this.setState({ isHide: false });
         }
     }, {
         key: 'componentDidMount',
@@ -42,7 +42,7 @@ var TopBar = function (_React$Component) {
         key: 'render',
         value: function render() {
 
-            var classHide = this.state.isHide ? "top-bar-background" : "hide";
+            var classHide = this.state.isHide ? "top-bar-background" : "hide-top-bar";
             return React.createElement('div', { className: classHide });
         }
     }]);
