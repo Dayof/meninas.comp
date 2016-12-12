@@ -11,3 +11,6 @@ def not_found(error):
 
 from views import general
 app.register_blueprint(general.mod)
+
+if __name__ == '__main__':
+    app.run()
