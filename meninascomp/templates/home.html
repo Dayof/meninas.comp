@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='components/bootstrap-css-only/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/components-font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='public/main.min.css') }}">
+    <!-- scripts -->
+    <script src="{{ url_for('static', filename='components/react/react.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/react/react-dom.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/babel/browser.min.js') }}"></script>
   </head>
   <body>
     <div class="page">
       <div class="header">
+        <div id="navbar-event"></div>
+        <script type="text/babel" src="{{ url_for('static', filename='public/main.js') }}"></script>
         <div class="header-top">
           <nav class="top-bar row">
             <div class="top-bar-left">
