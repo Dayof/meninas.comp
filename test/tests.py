@@ -1,5 +1,5 @@
 import unittest
-from meninascomp.meninascomp import app
+from meninascomp import app
 
 class TestIndex(unittest.TestCase):
 
