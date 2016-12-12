@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: './<%= pkg.name %>/static/js/*.js',
+        src: './<%= pkg.name %>/static/public/*.js',
         dest: './<%= pkg.name %>/static/public/*.min.js'
       }
     },
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         options: {
             configFile: '.sass-lint.yml',
         },
-        target: ['./meninascomp/static/sass/**/*.scss']
+        target: ['./<%= pkg.name %>/static/sass/**/*.scss']
     },
     watch: {
       files: './<%= pkg.name %>/static/sass/**/*.scss',
@@ -34,6 +34,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'sasslint', 'watch']);
+  grunt.registerTask('default', ['sasslint', 'uglify', 'watch']);
 
 };
