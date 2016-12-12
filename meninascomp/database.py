@@ -1,61 +1,6 @@
-# -*- coding: utf-8 -*-
-
-import os
 from sqlite3 import dbapi2 as sqlite3
-from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash
-
-import sys
-
-reload(sys)
-sys.setdefaultencoding("utf-8")
-
-# create our little application :)
-app = Flask(__name__)
-
-# Load default config and override config from an environment variable
-app.config.update(dict(
-    DATABASE=os.path.join(app.root_path, 'meninascomp.db'),
-    DEBUG=True,
-    SECRET_KEY='development key',
-    USERNAME='admin',
-    PASSWORD='default'
-))
-app.config.from_envvar('MENINASCOMP_SETTINGS', silent=True)
-
-DESC = {'titulo': 'Meninas.comp',
-       'foto': 'logo.png'}
-
-@app.route('/')
-def index():
-    # db = get_db()
-    # cur = db.execute('select title, text from entries order by id desc')
-    # entries = cur.fetchall()
-    return render_template('weare.html', index_data=DESC)
-
-@app.route('/weare')
-def weAre():
-    return render_template('weare.html', index_data=DESC)
-
-@app.route('/team')
-def team():
-    return render_template('team.html', index_data=DESC)
-
-@app.route('/gallery')
-def gallery():
-    return render_template('gallery.html', index_data=DESC)
-
-@app.route('/events')
-def events():
-    return render_template('events.html', index_data=DESC)
-
-@app.route('/contact')
-def contact():
-    return render_template('contact.html', index_data=DESC)
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
+from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
+from meninascomp import app
 
 def connect_db():
     """Connects to the specific database."""
@@ -69,7 +14,6 @@ def init_db():
     with app.open_resource('schema.sql', mode='r') as f:
         db.cursor().executescript(f.read())
     db.commit()
-
 
 @app.cli.command('initdb')
 def initdb_command():
