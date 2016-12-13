@@ -226,6 +226,15 @@ h1.title:hover {
 }
 
 /* line 191, ../sass/_global.scss */
+nav {
+  text-align: center;
+}
+/* line 194, ../sass/_global.scss */
+nav .pagination {
+  display: inline-flex;
+}
+
+/* line 199, ../sass/_global.scss */
 .footer {
   background-size: 1.25rem;
   background-position: bottom center;
@@ -235,13 +244,13 @@ h1.title:hover {
   background-color: #2896ea;
 }
 
-/* line 201, ../sass/_global.scss */
+/* line 209, ../sass/_global.scss */
 table.footer-navigation tbody {
   border: none;
   background-color: transparent;
 }
 
-/* line 207, ../sass/_global.scss */
+/* line 215, ../sass/_global.scss */
 .footer-invisible {
   float: center;
   padding-top: 2rem;
@@ -249,26 +258,26 @@ table.footer-navigation tbody {
   width: 30rem;
 }
 
-/* line 214, ../sass/_global.scss */
+/* line 222, ../sass/_global.scss */
 .footer-actions {
   float: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 220, ../sass/_global.scss */
+/* line 228, ../sass/_global.scss */
 .footer-unb {
   float: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 226, ../sass/_global.scss */
+/* line 234, ../sass/_global.scss */
 .copyright {
   padding-bottom: 1rem;
 }
 
-/* line 230, ../sass/_global.scss */
+/* line 238, ../sass/_global.scss */
 .social-icons {
   display: inline-flex;
   margin-top: 0;
@@ -276,11 +285,11 @@ table.footer-navigation tbody {
   margin-left: auto;
   margin-top: auto;
 }
-/* line 237, ../sass/_global.scss */
+/* line 245, ../sass/_global.scss */
 .social-icons li {
   padding-left: 10px;
 }
-/* line 240, ../sass/_global.scss */
+/* line 248, ../sass/_global.scss */
 .social-icons li a {
   display: inline-block;
   width: 5rem;
@@ -297,39 +306,52 @@ table.footer-navigation tbody {
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 251, ../sass/_global.scss */
+/* line 259, ../sass/_global.scss */
 .social-icons li a:hover {
   color: transparent;
   background-color: white;
 }
-/* line 255, ../sass/_global.scss */
+/* line 263, ../sass/_global.scss */
 .social-icons li a:hover .icon {
   color: #2896ea;
 }
 
-/* line 262, ../sass/_global.scss */
-.team-mid {
+/* line 270, ../sass/_global.scss */
+h1.mid {
   text-align: center;
 }
 
-/* line 266, ../sass/_global.scss */
-table.team {
+/* line 274, ../sass/_global.scss */
+table {
   text-align: center;
-  font-family: Rockwell;
 }
-/* line 270, ../sass/_global.scss */
-table.team tbody {
+/* line 277, ../sass/_global.scss */
+table tbody {
   border: none;
 }
-/* line 274, ../sass/_global.scss */
-table.team .name {
+/* line 281, ../sass/_global.scss */
+table .name {
   padding-bottom: 15px;
   font-size: 40px;
   font-size: 2.5rem;
+  font-family: Rockwell;
 }
-/* line 279, ../sass/_global.scss */
-table.team .perfil-desc {
+/* line 287, ../sass/_global.scss */
+table .adjust {
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+/* line 294, ../sass/_global.scss */
+table .desc {
   padding-top: 15px;
   font-size: 25px;
   font-size: 1.5625rem;
+  font-family: Rockwell;
+}
+
+/* line 301, ../sass/_global.scss */
+img[src=""] {
+  display: none;
 }

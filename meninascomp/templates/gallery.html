@@ -2,6 +2,54 @@
 {% block body %}
   <div class="mid-content">
     <div class="row">
-      <h1>TODO..</h1>
+      <h1 class="header mid">Galeria</h1>
+      <table class="gallery">
+        <tr>
+        {% for data in pages.lineOne %}
+          <td class="photo">
+            <div class="name"></div>
+            <img class="adjust" src="{{ data }}" alt="...">
+            <div class="desc"></div>
+          </td>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for data in pages.lineTwo %}
+          <td class="photo">
+            <div class="name"></div>
+            <img class="adjust" src="{{ data }}" alt="">
+            <div class="desc"></div>
+          </td>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for data in pages.lineThree %}
+          <td class="photo">
+            <div class="name"></div>
+            <img class="adjust" src="{{ data }}" alt="">
+            <div class="desc"></div>
+          </td>
+        {% endfor %}
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="nav-mid row">
+    <nav aria-label="Gallery navigation">
+      <ul class="pagination pagination-lg">
+        <!-- <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li> -->
+        <li><a href="{{ url_for('gallery.pageOne') }}">1</a></li>
+        <li><a href="{{ url_for('gallery.pageTwo') }}">2</a></li>
+        <!-- <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li> -->
+      </ul>
+    </nav>
   </div>
 {% endblock %}

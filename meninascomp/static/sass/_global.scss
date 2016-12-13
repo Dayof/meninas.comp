@@ -15,7 +15,7 @@
   .footer-invisible {
     width: auto !important;
   }
-  
+
   .top-bar-right > .menu {
     display: none;
   }
@@ -188,6 +188,14 @@ h1.title {
   }
 }
 
+nav {
+  text-align: center;
+
+  .pagination {
+    display: inline-flex;
+  }
+}
+
 .footer {
   background-size: 1.25rem;
   background-position: bottom center;
@@ -259,13 +267,12 @@ table.footer-navigation {
   }
 }
 
-.team-mid {
+h1.mid {
   text-align: center;
 }
 
-table.team {
+table {
   text-align: center;
-  font-family: Rockwell;
 
   tbody {
     border: none;
@@ -274,12 +281,25 @@ table.team {
   .name {
     padding-bottom: 15px;
     @include font-size(40px);
+    font-family: Rockwell;
   }
 
-  .perfil-desc {
+  .adjust {
+    max-width:250px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+  }
+
+  .desc {
     padding-top: 15px;
     @include font-size(25px);
+    font-family: Rockwell;
   }
+}
+
+img[src=""] {
+ display: none;
 }
 
 // .sidebar {
