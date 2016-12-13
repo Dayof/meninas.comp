@@ -29,3 +29,7 @@ def events():
 @mod.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@mod.route('/sidebar')
+def sidebar():
+    return render_template('sidebar.html')

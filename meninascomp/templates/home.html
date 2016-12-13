@@ -32,7 +32,7 @@
               </ul>
             </div>
             <div class="top-bar-right">
-              <button type="button" class="navbar-button">
+              <button href="{{ url_for('general.sidebar') }}" type="button" class="navbar-button">
                 <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
               </button>
               <ul class="menu">
@@ -57,6 +57,7 @@
       <div class="content">
         {% block body %}{% endblock %}
       </div>
+
       <div class="footer">
         <table class="footer-navigation row">
           <tr>

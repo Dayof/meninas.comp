@@ -9,6 +9,7 @@
     padding-top: .5rem;
     padding-right: 5rem;
   }
+
 }
 
 @media (max-width: 899px) {
@@ -57,7 +58,6 @@ a {
 
 .page {
   width: 100%;
-  overflow: hidden;
 }
 
 .top-bar-background{
@@ -164,6 +164,8 @@ h1.title, h2.title {
   background-color: $background-color;
   max-width: 100%;
   padding: 0;
+  margin-bottom: 6em;
+  margin-top: 5em;
 }
 
 .mid-content {
@@ -303,34 +305,29 @@ table.events {
 
   .event {
     padding-right: 5em;
-
-    .desc {
-    }
-
-    .date {
-    }
   }
 }
 
+.section-gallery {
+  margin: 50px 300px 0 300px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: .08125rem;
 
-// .sidebar {
-//   @include bp-small {
-//     margin: $no-margin;
-//     width: 100%;
-//     float: none;
-//   }
-//   margin: $litte-margin;
-//   width: 60%;
-//   float: left;
-// }
+  .i-block {
+    display: block;
+  }
 
-// div {
-//   container {
-//     background-color: $background-color;
-//     color: $base-black;
-//     width: 100%;
-//   }
-// }
+  .i-g-left {
+    float: left;
+  }
+
+  .i-g-right {
+    float: right;
+  }
+}
 
 // .entries        { list-style: none; margin: 0; padding: 0; }
 // .entries li     { margin: 0.8em 1.2em; }

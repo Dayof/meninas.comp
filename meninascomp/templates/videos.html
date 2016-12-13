@@ -1,0 +1,51 @@
+{% extends "home.html" %}
+{% block body %}
+  <div class="mid-content">
+    <div class="row">
+      <h1 class="header mid">Vídeos</h1>
+      <table class="videos">
+        <tr>
+          <td class="photo">
+            <div class="name"></div>
+            <iframe width="250" height="200" src="https://www.youtube.com/embed/nTKcb1SEj5s" frameborder="0" allowfullscreen></iframe>
+            <div class="desc"></div>
+          </td>
+          <td class="photo">
+            <div class="name"></div>
+            <iframe width="250" height="200" src="https://www.youtube.com/embed/8hHls1eXWHg" frameborder="0" allowfullscreen></iframe>
+            <div class="desc"></div>
+          </td>
+          <td class="photo">
+            <div class="name"></div>
+            <iframe width="250" height="200" src="https://www.youtube.com/embed/T3trJzcBG7o" frameborder="0" allowfullscreen></iframe>
+            <div class="desc"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="photo">
+            <div class="name"></div>
+            <iframe width="250" height="200" src="https://www.youtube.com/embed/Bv9_ApyVGKk" frameborder="0" allowfullscreen></iframe>
+            <div class="desc"></div>
+          </td>
+          <td class="photo">
+            <div class="name"></div>
+            <iframe width="250" height="200" src="https://www.youtube.com/embed/JrMgx6nxLdQ" frameborder="0" allowfullscreen></iframe>
+            <div class="desc"></div>
+          </td>
+          <td class="photo">
+            <div class="name"></div>
+            <iframe width="250" height="200" src="https://www.youtube.com/embed/FvcDXgfmfNc" frameborder="0" allowfullscreen></iframe>
+            <div class="desc"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="nav-mid row">
+    <nav aria-label="Video navigation">
+      <ul class="pagination pagination-lg">
+        <li><a href="{{ url_for('gallery.videosPageOne') }}">1</a></li>
+      </ul>
+    </nav>
+  </div>
+{% endblock %}
