@@ -1,70 +1,37 @@
-/* line 79, ../sass/_mixins.scss */
-.container-with-floated-children {
-  zoom: 1;
-}
-/* line 81, ../sass/_mixins.scss */
-.container-with-floated-children:before, .container-with-floated-children:after {
-  display: table;
-  content: " ";
-}
-/* line 85, ../sass/_mixins.scss */
-.container-with-floated-children:after {
-  clear: both;
-}
+@media (max-width: 660px) {
+  /* line 2, ../sass/_global.scss */
+  .top-bar-right > .menu {
+    display: none;
+  }
 
-/* line 90, ../sass/_mixins.scss */
-.hidden {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
+  /* line 6, ../sass/_global.scss */
+  .top-bar-right > .navbar-button {
+    display: block;
+    color: #da0052;
+    padding-top: .5rem;
+    padding-right: 5rem;
+  }
 }
+@media (max-width: 899px) {
+  /* line 15, ../sass/_global.scss */
+  .footer-invisible {
+    width: auto !important;
+  }
 
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 1;
+  /* line 19, ../sass/_global.scss */
+  .top-bar-right > .menu {
+    display: none;
   }
-  90% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes slide-down {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
+
+  /* line 23, ../sass/_global.scss */
+  .top-bar-right > .navbar-button {
+    display: block;
+    color: #da0052;
+    padding-top: .5rem;
+    padding-right: 5rem;
   }
 }
-@-ms-keyframes slide-down {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
-@-o-keyframes slide-down {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
-@keyframes slide-down {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
-/* line 11, ../sass/_global.scss */
+/* line 31, ../sass/_global.scss */
 body {
   margin: 0;
   height: 100%;
@@ -73,20 +40,40 @@ body {
   color: #333333;
   font-family: Helvetica, sans-serif;
   line-height: 1.5;
+  min-width: 500px;
 }
 
-/* line 21, ../sass/_global.scss */
+/* line 42, ../sass/_global.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 25, ../sass/_global.scss */
+/* line 46, ../sass/_global.scss */
+a {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 52, ../sass/_global.scss */
+h2 {
+  color: #028eeb;
+}
+
+/* line 56, ../sass/_global.scss */
+.row {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 62, ../sass/_global.scss */
 .page {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 30, ../sass/_global.scss */
+/* line 67, ../sass/_global.scss */
 .top-bar-background {
   position: fixed;
   height: 100px;
@@ -107,24 +94,40 @@ ul {
   transition: top 0.15s ease;
 }
 
-/* line 45, ../sass/_global.scss */
+/* line 82, ../sass/_global.scss */
 .hide-top-bar {
-  top: -40px;
+  position: fixed;
+  height: 100px;
+  height: 6.25rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* line 49, ../sass/_global.scss */
+/* line 91, ../sass/_global.scss */
 .top-bar, .top-bar ul {
   width: auto;
   background-color: rgba(255, 255, 255, 0);
   padding: .5rem;
 }
 
-/* line 55, ../sass/_global.scss */
-.top-bar-right {
+/* line 97, ../sass/_global.scss */
+.navbar-button {
+  display: none;
+}
+
+/* line 101, ../sass/_global.scss */
+.top-bar > .top-bar-left {
   width: auto;
 }
-/* line 57, ../sass/_global.scss */
-.top-bar-right a {
+
+/* line 105, ../sass/_global.scss */
+.top-bar > .top-bar-right {
+  width: auto;
+}
+/* line 107, ../sass/_global.scss */
+.top-bar > .top-bar-right a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8rem;
@@ -132,7 +135,7 @@ ul {
   color: white;
 }
 
-/* line 66, ../sass/_global.scss */
+/* line 116, ../sass/_global.scss */
 .header-top {
   position: fixed;
   z-index: 9999;
@@ -140,7 +143,7 @@ ul {
   top: 0;
 }
 
-/* line 73, ../sass/_global.scss */
+/* line 123, ../sass/_global.scss */
 .header-bottom {
   color: #3ea5b3;
   background-image: url("../img/header-background.png");
@@ -150,20 +153,13 @@ ul {
   max-height: calc(100vh - 72px);
 }
 
-/* line 82, ../sass/_global.scss */
-.row {
-  max-width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 88, ../sass/_global.scss */
+/* line 132, ../sass/_global.scss */
 .hero-inner {
   position: relative;
   height: 100%;
 }
 
-/* line 93, ../sass/_global.scss */
+/* line 137, ../sass/_global.scss */
 .hero-copy {
   display: inline-block;
   position: absolute;
@@ -183,14 +179,7 @@ ul {
   font-family: Rockwell;
 }
 
-/* line 120, ../sass/_global.scss */
-a {
-  background-color: rgba(255, 255, 255, 0);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* line 126, ../sass/_global.scss */
+/* line 156, ../sass/_global.scss */
 h1.title {
   color: #028eeb;
   -webkit-transition: color 0.15s ease;
@@ -200,17 +189,12 @@ h1.title {
   transition: color 0.15s ease;
   font: Helvetica, sans-serif;
 }
-/* line 129, ../sass/_global.scss */
+/* line 159, ../sass/_global.scss */
 h1.title:hover {
   color: white;
 }
 
-/* line 136, ../sass/_global.scss */
-h2 {
-  color: #028eeb;
-}
-
-/* line 144, ../sass/_global.scss */
+/* line 165, ../sass/_global.scss */
 .content {
   display: block;
   margin: 0;
@@ -219,7 +203,7 @@ h2 {
   padding: 0;
 }
 
-/* line 152, ../sass/_global.scss */
+/* line 173, ../sass/_global.scss */
 .mid-content {
   display: block;
   margin-right: 0%;
@@ -227,21 +211,21 @@ h2 {
   color: #6e6e6e;
   padding: 2rem 0 0 2rem;
 }
-/* line 159, ../sass/_global.scss */
+/* line 180, ../sass/_global.scss */
 .mid-content h1 {
   padding-bottom: 30px;
   padding-bottom: 1.875rem;
   text-transform: uppercase;
 }
-/* line 164, ../sass/_global.scss */
-.mid-content .we-are-desc {
+/* line 185, ../sass/_global.scss */
+.mid-content p {
   margin-bottom: 15px;
   margin-bottom: 0.9375rem;
   font-size: 35px;
   font-size: 2.1875rem;
 }
 
-/* line 170, ../sass/_global.scss */
+/* line 191, ../sass/_global.scss */
 .footer {
   background-size: 1.25rem;
   background-position: bottom center;
@@ -251,34 +235,52 @@ h2 {
   background-color: #2896ea;
 }
 
-/* line 179, ../sass/_global.scss */
+/* line 201, ../sass/_global.scss */
+table.footer-navigation tbody {
+  border: none;
+  background-color: transparent;
+}
+
+/* line 207, ../sass/_global.scss */
+.footer-invisible {
+  float: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 30rem;
+}
+
+/* line 214, ../sass/_global.scss */
 .footer-actions {
-  float: right;
+  float: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 185, ../sass/_global.scss */
+/* line 220, ../sass/_global.scss */
 .footer-unb {
   float: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 191, ../sass/_global.scss */
+/* line 226, ../sass/_global.scss */
 .copyright {
   padding-bottom: 1rem;
 }
 
-/* line 195, ../sass/_global.scss */
+/* line 230, ../sass/_global.scss */
 .social-icons {
-  display: block;
+  display: inline-flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-top: auto;
 }
-/* line 202, ../sass/_global.scss */
+/* line 237, ../sass/_global.scss */
+.social-icons li {
+  padding-left: 10px;
+}
+/* line 240, ../sass/_global.scss */
 .social-icons li a {
   display: inline-block;
   width: 5rem;
@@ -295,21 +297,39 @@ h2 {
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 213, ../sass/_global.scss */
+/* line 251, ../sass/_global.scss */
 .social-icons li a:hover {
   color: transparent;
   background-color: white;
 }
-/* line 217, ../sass/_global.scss */
+/* line 255, ../sass/_global.scss */
 .social-icons li a:hover .icon {
   color: #2896ea;
 }
 
-/* line 223, ../sass/_global.scss */
-.icon {
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -ms-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
-  transition: all 0.15s ease;
+/* line 262, ../sass/_global.scss */
+.team-mid {
+  text-align: center;
+}
+
+/* line 266, ../sass/_global.scss */
+table.team {
+  text-align: center;
+  font-family: Rockwell;
+}
+/* line 270, ../sass/_global.scss */
+table.team tbody {
+  border: none;
+}
+/* line 274, ../sass/_global.scss */
+table.team .name {
+  padding-bottom: 15px;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+/* line 279, ../sass/_global.scss */
+table.team .perfil-desc {
+  padding-top: 15px;
+  font-size: 25px;
+  font-size: 1.5625rem;
 }

@@ -24,20 +24,20 @@
 }
 
 
-@mixin bp-large {
-  @media only screen and (max-width: 60em) {
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
     @content;
   }
 }
 
-@mixin bp-medium {
-  @media only screen and (max-width: 40em) {
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
   }
 }
 
-@mixin bp-small {
-  @media only screen and (max-width: 30em) {
+@mixin phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
     @content;
   }
 }

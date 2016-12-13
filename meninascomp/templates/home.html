@@ -31,10 +31,12 @@
                 </li>
               </ul>
             </div>
-            <div class="top-bar-right top-bar-right-desktop mobile-menu">
+            <div class="top-bar-right">
+              <button type="button" class="navbar-button">
+                <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+              </button>
               <ul class="menu">
                 <li><a href="{{ url_for('general.weAre') }}">Projeto</a></li>
-                <li><a href="{{ url_for('general.team') }}">Equipe</a></li>
                 <li><a href="{{ url_for('general.events') }}">Eventos</a></li>
                 <li><a href="{{ url_for('general.gallery') }}">Galeria</a></li>
                 <li><a href="{{ url_for('general.contact') }}">Contato</a></li>
@@ -56,24 +58,31 @@
         {% block body %}{% endblock %}
       </div>
       <div class="footer">
-        <div class="row">
-          <div class="footer-navigation"></div>
-          <div class="footer-actions">
-            <ul class="social-icons" >
-              <li>
-                <a href="https://www.facebook.com/meninas.comp/" title="Facebook" target="_blank">
-                  <i class="icon fa fa-facebook fa-2x" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-unb">
-            <div class="copyright">© 2016 Meninas.comp</div>
-            <a href="http://www.unb.br" title="UnB">
-               <img  src="static/img/unb.png" alt="UnB">
-            </a>
-          </div>
-        </div>
+        <table class="footer-navigation row">
+          <tr>
+            <td class="footer-invisible"></td>
+            <td class="footer-unb">
+              <div class="copyright">© 2016 Meninas.comp</div>
+              <a href="http://www.unb.br" title="UnB">
+                 <img  src="static/img/unb.png" alt="UnB">
+              </a>
+            </td>
+            <td class="footer-actions">
+              <ul class="social-icons" >
+                <li>
+                  <a href="https://www.facebook.com/meninas.comp/" title="Facebook" target="_blank">
+                    <i class="icon fa fa-facebook fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Dayof/meninas.comp" title="GitHub" target="_blank">
+                    <i class="icon fa fa-github fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
