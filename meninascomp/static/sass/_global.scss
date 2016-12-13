@@ -3,11 +3,16 @@
     display: none;
   }
 
-  .top-bar-right > .navbar-button {
+  .top-bar-right > a.navbar-button {
     display: block;
     color: $base-strong-pink;
     padding-top: .5rem;
     padding-right: 5rem;
+    @include transition(white 3s ease);
+  }
+
+  .top-bar-right > a.navbar-button:hover {
+    color: $base-strong-pink;
   }
 
 }
@@ -21,11 +26,16 @@
     display: none;
   }
 
-  .top-bar-right > .navbar-button {
+  .top-bar-right > a.navbar-button {
     display: block;
     color: $base-strong-pink;
     padding-top: .5rem;
     padding-right: 5rem;
+    @include transition(white 3s ease);
+  }
+
+  .top-bar-right > a.navbar-button:hover {
+    color: $base-strong-pink;
   }
 }
 

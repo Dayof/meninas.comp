@@ -2,13 +2,11 @@
 {% block body %}
   <div class="mid-content">
     <div class="row">
-      <h1 class="header">Menu</h1>
-      <ul class="menu">
-        <li><a href="{{ url_for('general.weAre') }}">Projeto</a></li>
-        <li><a href="{{ url_for('general.events') }}">Eventos</a></li>
-        <li><a href="{{ url_for('general.gallery') }}">Galeria</a></li>
-        <li><a href="{{ url_for('general.contact') }}">Contato</a></li>
-      </ul>
+      <h1 class="header mid">Menu</h1>
+      <h2 class="header mid"><a href="{{ url_for('general.weAre') }}">Projeto</a></h2>
+      <h2 class="header mid"><a href="{{ url_for('general.events') }}">Eventos</a></h2>
+      <h2 class="header mid"><a href="{{ url_for('general.gallery') }}">Galeria</a></h2>
+      <h2 class="header mid"><a href="{{ url_for('general.contact') }}">Contato</a></h2>
     </div>
   </div>
 {% endblock %}
