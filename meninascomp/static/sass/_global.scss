@@ -49,10 +49,6 @@ a {
   cursor: pointer;
 }
 
-h2 {
-  color: $link-color;
-}
-
 .row {
   max-width: 100rem;
   margin-left: auto;
@@ -153,7 +149,7 @@ h2 {
   font-family: Rockwell;
 }
 
-h1.title {
+h1.title, h2.title {
   color: $link-color;
   @include transition(color .15s ease);
   &:hover {
@@ -177,7 +173,7 @@ h1.title {
   color: $base-header-color;
   padding: 2rem 0 0 2rem;
 
-  h1 {
+  h1, h2 {
     @include padding-bottom-size(30px);
     text-transform: uppercase;
   }
@@ -267,7 +263,7 @@ table.footer-navigation {
   }
 }
 
-h1.mid {
+h1.mid, h2.mid {
   text-align: center;
 }
 
@@ -299,8 +295,23 @@ table {
 }
 
 img[src=""] {
- display: none;
+  display: none;
 }
+
+table.events {
+  text-align: center;
+
+  .event {
+    padding-right: 5em;
+
+    .desc {
+    }
+
+    .date {
+    }
+  }
+}
+
 
 // .sidebar {
 //   @include bp-small {

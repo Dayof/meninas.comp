@@ -56,24 +56,19 @@ a {
 }
 
 /* line 52, ../sass/_global.scss */
-h2 {
-  color: #028eeb;
-}
-
-/* line 56, ../sass/_global.scss */
 .row {
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 62, ../sass/_global.scss */
+/* line 58, ../sass/_global.scss */
 .page {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 67, ../sass/_global.scss */
+/* line 63, ../sass/_global.scss */
 .top-bar-background {
   position: fixed;
   height: 100px;
@@ -94,7 +89,7 @@ h2 {
   transition: top 0.15s ease;
 }
 
-/* line 82, ../sass/_global.scss */
+/* line 78, ../sass/_global.scss */
 .hide-top-bar {
   position: fixed;
   height: 100px;
@@ -105,28 +100,28 @@ h2 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* line 91, ../sass/_global.scss */
+/* line 87, ../sass/_global.scss */
 .top-bar, .top-bar ul {
   width: auto;
   background-color: rgba(255, 255, 255, 0);
   padding: .5rem;
 }
 
-/* line 97, ../sass/_global.scss */
+/* line 93, ../sass/_global.scss */
 .navbar-button {
   display: none;
 }
 
-/* line 101, ../sass/_global.scss */
+/* line 97, ../sass/_global.scss */
 .top-bar > .top-bar-left {
   width: auto;
 }
 
-/* line 105, ../sass/_global.scss */
+/* line 101, ../sass/_global.scss */
 .top-bar > .top-bar-right {
   width: auto;
 }
-/* line 107, ../sass/_global.scss */
+/* line 103, ../sass/_global.scss */
 .top-bar > .top-bar-right a {
   text-transform: uppercase;
   font-weight: 700;
@@ -135,7 +130,7 @@ h2 {
   color: white;
 }
 
-/* line 116, ../sass/_global.scss */
+/* line 112, ../sass/_global.scss */
 .header-top {
   position: fixed;
   z-index: 9999;
@@ -143,7 +138,7 @@ h2 {
   top: 0;
 }
 
-/* line 123, ../sass/_global.scss */
+/* line 119, ../sass/_global.scss */
 .header-bottom {
   color: #3ea5b3;
   background-image: url("../img/header-background.png");
@@ -153,13 +148,13 @@ h2 {
   max-height: calc(100vh - 72px);
 }
 
-/* line 132, ../sass/_global.scss */
+/* line 128, ../sass/_global.scss */
 .hero-inner {
   position: relative;
   height: 100%;
 }
 
-/* line 137, ../sass/_global.scss */
+/* line 133, ../sass/_global.scss */
 .hero-copy {
   display: inline-block;
   position: absolute;
@@ -179,8 +174,8 @@ h2 {
   font-family: Rockwell;
 }
 
-/* line 156, ../sass/_global.scss */
-h1.title {
+/* line 152, ../sass/_global.scss */
+h1.title, h2.title {
   color: #028eeb;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
@@ -189,12 +184,12 @@ h1.title {
   transition: color 0.15s ease;
   font: Helvetica, sans-serif;
 }
-/* line 159, ../sass/_global.scss */
-h1.title:hover {
+/* line 155, ../sass/_global.scss */
+h1.title:hover, h2.title:hover {
   color: white;
 }
 
-/* line 165, ../sass/_global.scss */
+/* line 161, ../sass/_global.scss */
 .content {
   display: block;
   margin: 0;
@@ -203,7 +198,7 @@ h1.title:hover {
   padding: 0;
 }
 
-/* line 173, ../sass/_global.scss */
+/* line 169, ../sass/_global.scss */
 .mid-content {
   display: block;
   margin-right: 0%;
@@ -211,13 +206,13 @@ h1.title:hover {
   color: #6e6e6e;
   padding: 2rem 0 0 2rem;
 }
-/* line 180, ../sass/_global.scss */
-.mid-content h1 {
+/* line 176, ../sass/_global.scss */
+.mid-content h1, .mid-content h2 {
   padding-bottom: 30px;
   padding-bottom: 1.875rem;
   text-transform: uppercase;
 }
-/* line 185, ../sass/_global.scss */
+/* line 181, ../sass/_global.scss */
 .mid-content p {
   margin-bottom: 15px;
   margin-bottom: 0.9375rem;
@@ -225,16 +220,16 @@ h1.title:hover {
   font-size: 2.1875rem;
 }
 
-/* line 191, ../sass/_global.scss */
+/* line 187, ../sass/_global.scss */
 nav {
   text-align: center;
 }
-/* line 194, ../sass/_global.scss */
+/* line 190, ../sass/_global.scss */
 nav .pagination {
   display: inline-flex;
 }
 
-/* line 199, ../sass/_global.scss */
+/* line 195, ../sass/_global.scss */
 .footer {
   background-size: 1.25rem;
   background-position: bottom center;
@@ -244,13 +239,13 @@ nav .pagination {
   background-color: #2896ea;
 }
 
-/* line 209, ../sass/_global.scss */
+/* line 205, ../sass/_global.scss */
 table.footer-navigation tbody {
   border: none;
   background-color: transparent;
 }
 
-/* line 215, ../sass/_global.scss */
+/* line 211, ../sass/_global.scss */
 .footer-invisible {
   float: center;
   padding-top: 2rem;
@@ -258,26 +253,26 @@ table.footer-navigation tbody {
   width: 30rem;
 }
 
-/* line 222, ../sass/_global.scss */
+/* line 218, ../sass/_global.scss */
 .footer-actions {
   float: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 228, ../sass/_global.scss */
+/* line 224, ../sass/_global.scss */
 .footer-unb {
   float: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 234, ../sass/_global.scss */
+/* line 230, ../sass/_global.scss */
 .copyright {
   padding-bottom: 1rem;
 }
 
-/* line 238, ../sass/_global.scss */
+/* line 234, ../sass/_global.scss */
 .social-icons {
   display: inline-flex;
   margin-top: 0;
@@ -285,11 +280,11 @@ table.footer-navigation tbody {
   margin-left: auto;
   margin-top: auto;
 }
-/* line 245, ../sass/_global.scss */
+/* line 241, ../sass/_global.scss */
 .social-icons li {
   padding-left: 10px;
 }
-/* line 248, ../sass/_global.scss */
+/* line 244, ../sass/_global.scss */
 .social-icons li a {
   display: inline-block;
   width: 5rem;
@@ -306,44 +301,44 @@ table.footer-navigation tbody {
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 259, ../sass/_global.scss */
+/* line 255, ../sass/_global.scss */
 .social-icons li a:hover {
   color: transparent;
   background-color: white;
 }
-/* line 263, ../sass/_global.scss */
+/* line 259, ../sass/_global.scss */
 .social-icons li a:hover .icon {
   color: #2896ea;
 }
 
-/* line 270, ../sass/_global.scss */
-h1.mid {
+/* line 266, ../sass/_global.scss */
+h1.mid, h2.mid {
   text-align: center;
 }
 
-/* line 274, ../sass/_global.scss */
+/* line 270, ../sass/_global.scss */
 table {
   text-align: center;
 }
-/* line 277, ../sass/_global.scss */
+/* line 273, ../sass/_global.scss */
 table tbody {
   border: none;
 }
-/* line 281, ../sass/_global.scss */
+/* line 277, ../sass/_global.scss */
 table .name {
   padding-bottom: 15px;
   font-size: 40px;
   font-size: 2.5rem;
   font-family: Rockwell;
 }
-/* line 287, ../sass/_global.scss */
+/* line 283, ../sass/_global.scss */
 table .adjust {
   max-width: 250px;
   max-height: 250px;
   width: auto;
   height: auto;
 }
-/* line 294, ../sass/_global.scss */
+/* line 290, ../sass/_global.scss */
 table .desc {
   padding-top: 15px;
   font-size: 25px;
@@ -351,7 +346,16 @@ table .desc {
   font-family: Rockwell;
 }
 
-/* line 301, ../sass/_global.scss */
+/* line 297, ../sass/_global.scss */
 img[src=""] {
   display: none;
+}
+
+/* line 301, ../sass/_global.scss */
+table.events {
+  text-align: center;
+}
+/* line 304, ../sass/_global.scss */
+table.events .event {
+  padding-right: 5em;
 }
