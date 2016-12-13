@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: './<%= pkg.name %>/static/public/*.js',
-        dest: './<%= pkg.name %>/static/public/*.min.js'
+        dest: './<%= pkg.name %>/static/public/main.min.js'
       }
     },
     sasslint: {
