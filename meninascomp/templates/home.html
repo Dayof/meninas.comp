@@ -38,7 +38,13 @@
               <ul class="menu">
                 <li><a href="{{ url_for('general.weAre') }}">Projeto</a></li>
                 <li><a href="{{ url_for('general.events') }}">Eventos</a></li>
-                <li><a href="{{ url_for('general.gallery') }}">Galeria</a></li>
+                <li class="dropdown">
+                  <a>Galeria</a>
+                  <div class="dropdown-content">
+                    <a href="{{ url_for('gallery.photosPageOne') }}">Fotos</a>
+                    <a href="{{ url_for('gallery.videosPageOne') }}">Vídeos</a>
+                  </div>
+                </li>
                 <li><a href="{{ url_for('general.contact') }}">Contato</a></li>
               </ul>
             </div>
